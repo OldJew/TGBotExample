@@ -1,0 +1,13 @@
+package ru.oldjew.telegrambotexample;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class TelegramBotExampleApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
