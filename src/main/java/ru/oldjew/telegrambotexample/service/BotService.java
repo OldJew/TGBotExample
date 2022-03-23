@@ -104,7 +104,7 @@ public class BotService extends TelegramLongPollingBot {
     }
 
     private String getPreviousCommand(Long chatId){
-        return previousCommands.get(chatId).get(previousCommands.size() - 1);
+        return previousCommands.get(chatId).get(previousCommands.get(chatId).size() - 1);
     }
     //Данный метод будет вызван сразу после того, как данный бин будет создан - это обеспечено аннотацией Spring PostConstruct
     @PostConstruct
