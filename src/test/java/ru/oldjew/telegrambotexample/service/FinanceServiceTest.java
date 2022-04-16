@@ -4,10 +4,8 @@ import org.junit.jupiter.api.*;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
-import ru.oldjew.telegrambotexample.dao.IncomesRepository;
-import ru.oldjew.telegrambotexample.dao.SpendsRepository;
-
-import static org.junit.jupiter.api.Assertions.*;
+import ru.oldjew.telegrambotexample.repository.IncomesRepository;
+import ru.oldjew.telegrambotexample.repository.SpendsRepository;
 
 @SpringBootTest
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)

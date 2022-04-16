@@ -2,7 +2,7 @@ package ru.oldjew.telegrambotexample.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
-import ru.oldjew.telegrambotexample.dao.ActiveChatRepository;
+import ru.oldjew.telegrambotexample.repository.ActiveChatRepository;
 import ru.oldjew.telegrambotexample.dto.CentralRussianBankService;
 import ru.oldjew.telegrambotexample.dto.ValuteCursOnDate;
 import ru.oldjew.telegrambotexample.model.ActiveChat;

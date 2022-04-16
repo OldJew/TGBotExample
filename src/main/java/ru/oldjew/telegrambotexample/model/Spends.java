@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "SPENDS", schema = "public")
@@ -19,4 +20,7 @@ public class Spends {
 
     @Column(name = "SPEND")
     private BigDecimal spend;
+
+    @Column(name = "DATE")
+    private LocalDate date;
 }

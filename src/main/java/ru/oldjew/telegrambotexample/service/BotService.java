@@ -10,7 +10,7 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import ru.oldjew.telegrambotexample.dao.ActiveChatRepository;
+import ru.oldjew.telegrambotexample.repository.ActiveChatRepository;
 import ru.oldjew.telegrambotexample.dto.CentralRussianBankService;
 import ru.oldjew.telegrambotexample.dto.ValuteCursOnDate;
 import ru.oldjew.telegrambotexample.model.ActiveChat;
@@ -37,7 +37,7 @@ public class BotService extends TelegramLongPollingBot {
     private static final String ADD_INCOME = "/addincome";
     private static final String ADD_SPEND = "/addspend";
 
-    @Value("${bot.api.key}") //Сюда будет вставлено значение из application.properties, в котором будет указан api key, полученный от BotFather
+    @Value("${bot.api.key}") //Сюда будет вставлено значение из forGitAppProperties.properties, в котором будет указан api key, полученный от BotFather
     private String apiKey;
 
     @Value("${bot.name}") //Как будут звать нашего бота
